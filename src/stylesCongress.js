@@ -30,18 +30,18 @@ export const AppWrapper = styled.main`
   font-family: ${({ theme }) => theme.bodyFont};
   color: #03212c;
   line-height: 1.3;
-  // min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   position: relative;
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background: white;
-  // position: relative;
-  // max-width: 1978px;
-  // margin: auto;
-  // height: 1024px;
+  position: relative;
+  max-width: 1978px;
+  margin: auto;
+  height: 1024px;
 
-  // display: flex;
-  // flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
   @media (max-width: 1366px) {
     transform: scale(0.8);

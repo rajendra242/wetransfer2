@@ -145,9 +145,9 @@ const ForeImage = styled.img`
 `;
 const BackgroundImage = styled.img`
   z-index: -3;
-  // position: absolute;
-  width: 100%;
-  // height: 1080px;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
 
   @media (max-width: 1366px) {
     transform: scale(1.8);
