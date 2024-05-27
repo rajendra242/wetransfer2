@@ -1,0 +1,56 @@
+{
+  "name": "euretina-quiz",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "gsap": "^3.6.0",
+    "lottie-web": "^5.7.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-ga4": "^2.1.0",
+    "react-gtm-module": "^2.0.11",
+    "react-idle-timer": "^5.5.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "sanitize-html": "^2.3.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "REACT_APP_VERSION=congress REACT_APP_DEVICE=default REACT_APP_LANGUAGE=en react-scripts start",
+    "build": "REACT_APP_VERSION=congress REACT_APP_DEVICE=default REACT_APP_LANGUAGE=en react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-styled-components-a11y": "^0.0.32",
+    "fs-extra": "^11.1.1",
+    "pdfkit": "^0.13.0",
+    "puppeteer": "^19.10.1",
+    "react-app-rewired": "^2.1.8",
+    "replace-in-file-webpack-plugin": "^1.0.6"
+  }
+}
