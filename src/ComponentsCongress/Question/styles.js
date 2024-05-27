@@ -25,7 +25,7 @@ export const Wrapper = styled(ContentWrapper)`
   }
 
   @media (max-width: 1366px) {
-    margin-left: 150px;
+    // margin-left: 150px;
   }
 
   @media ${devices.PORTRAIT} {

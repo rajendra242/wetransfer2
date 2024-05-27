@@ -86,7 +86,7 @@ export default function Intro({ setName, screensaverContent }) {
           <span>{screensaverContent.ctaCopy}</span>
         </ButtonPrimary>
       </IntroWrapper>
-      <img className="fadeInUp fadeOut" src={ApellisLogo} alt="Apellis logo" />
+      {/* <img className="fadeInUp fadeOut" src={ApellisLogo} alt="Apellis logo" /> */}
       <JobCode className="fadeInUp fadeOut">
         <span
           dangerouslySetInnerHTML={{

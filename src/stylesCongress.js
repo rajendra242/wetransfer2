@@ -38,19 +38,19 @@ export const AppWrapper = styled.main`
   position: relative;
   max-width: 1978px;
   margin: auto;
-  height: 1024px;
+  height: 100%;
 
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 1366px) {
-    transform: scale(0.8);
-    transform-origin: top left;
-    -webkit-transform: scale(0.8); /* android, safari, chrome */
-    -moz-transform: scale(0.8); /* old firefox */
-    -o-transform: scale(0.8); /* old opera */
-    -ms-transform: scale(0.8); /* old IE */
-  }
+  // @media (max-width: 1366px) {
+  //   transform: scale(0.8);
+  //   transform-origin: top left;
+  //   -webkit-transform: scale(0.8); /* android, safari, chrome */
+  //   -moz-transform: scale(0.8); /* old firefox */
+  //   -o-transform: scale(0.8); /* old opera */
+  //   -ms-transform: scale(0.8); /* old IE */
+  // }
 
   @media ${devices.M} {
     padding-bottom: 0px;
@@ -154,8 +154,8 @@ export const AppWrapper = styled.main`
 
 export const Container = styled.div`
   width: 100%;
-  margin: 0 auto;
-  max-width: 1256px;
+  // margin: 0 auto;
+  // max-width: 1256px;
 
   @media (max-width: 1366px) {
     max-width: unset;
@@ -186,6 +186,21 @@ export const Container = styled.div`
       : "none"};
   backdrop-filter: blur(7px) opacity(1);
   animation: ${BackdropAnimation} 0.3s linear;
+
+  @media (max-width: 1020px) {
+    padding-inline: 20px 20px;
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    padding-inline: 50px 50px;
+    height: 1480px;
+  }
+
+  and (min-device-width : 320px)
+  and (max-device-width : 480px)
+  { 
+    padding-inline: 0px 0px !important;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -342,7 +357,7 @@ export const ProgressBarContainer = styled(Container)`
 
   @media (max-width: 1366px) {
     max-width: unset;
-    margin-left: 150px;
+    // margin-left: 150px;
   }
 
   @media ${devices.PORTRAIT} {

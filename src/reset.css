@@ -6,9 +6,16 @@
 
 @media (max-width: 1366px){
   body {
-    overflow: hidden;
+    overflow: auto;
   }
 }
+
+@media only screen
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)
+and (min-device-width : 768px)
+and (max-device-width : 1007px)
+{ /* STYLES GO HERE */ }
 
 * {
   box-sizing: border-box;

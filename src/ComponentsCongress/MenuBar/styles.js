@@ -12,12 +12,17 @@ export const Wrapper = styled.div`
   z-index: 2;
   height: 48px;
   left: 200px;
-  bottom: 80px;
-  width: 720px;
+  bottom: 0px;
+  width: 45%;
 
   @media (max-width: 1366px) {
-    left: 150px;
-    bottom: -100px;
+    // left: 150px;
+    // bottom: -100px;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    width: 90%;
+    left: 50px;
   }
 
   @media ${devices.PORTRAIT} {

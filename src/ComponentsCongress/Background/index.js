@@ -93,9 +93,9 @@ export default function Background() {
 }
 
 const BgImage = styled.img`
-  position: absolute;
-  width: 1920px;
-  height: 1080px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 `;
 
 const Wrapper = styled.div``;
@@ -145,9 +145,9 @@ const ForeImage = styled.img`
 `;
 const BackgroundImage = styled.img`
   z-index: -3;
-  position: absolute;
-  width: 1920px;
-  height: 1080px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 
   @media (max-width: 1366px) {
     transform: scale(1.8);

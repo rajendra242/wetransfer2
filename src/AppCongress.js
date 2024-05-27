@@ -25,6 +25,7 @@ import Sidebar from "./ComponentsCongress/Sidebar";
 import useAnswerExplanation from "./hooks/useAnswerExplanation";
 import SidebarContent from "./ComponentsCongress/Sidebar/SidebarContent";
 import { useScreensaver } from "./hooks/useScreensaver";
+import ApellisLogo from "./assets/images/apellis-logo.png";
 
 function App() {
   const patients = usePatients();
@@ -94,7 +95,7 @@ function App() {
     !isImagePopupOpen;
 
   function goToNextQuestion() {
-    const QUESTION_COUNT = 6;
+    const QUESTION_COUNT = 4;
     setShowAnswerExplanation(false);
 
     if (active < QUESTION_COUNT - 1) {
@@ -128,6 +129,13 @@ function App() {
         >
           <Background />
 
+          <img className="fadeInUp fadeOut" src={ApellisLogo} alt="Apellis logo" style={{
+            width: '180px',
+            zIndex: 1,
+            position: 'absolute',
+            right: 0,
+            margin: '40px'
+          }}/>
           {!showRestartModal && !isTimeoutIdle && (
             <Switch>
               {/* Home page */}
@@ -205,6 +213,18 @@ function App() {
               <Redirect to="/" />
             </Switch>
           )}
+        {((process.env.REACT_APP_DEVICE == "portrait" && showMenuBarPortrait) ||
+          (process.env.REACT_APP_DEVICE != "portrait" && showMenuBar)) && (
+          <MenuBar
+            referencesOpen={referencesOpen}
+            setReferencesOpen={setReferencesOpen}
+            resetProgress={resetProgress}
+            isReferencesContentEmpty={isReferencesContentEmpty}
+            referencesButtonText={buttonText}
+            setShowRestartModal={setShowRestartModal}
+            isSidebarOpen={referencesOpen || showAnswerExplanation}
+          />
+        )}
         </ContentContainer>
         <Sidebar
           background={
@@ -223,18 +243,6 @@ function App() {
           />
         </Sidebar>
 
-        {((process.env.REACT_APP_DEVICE == "portrait" && showMenuBarPortrait) ||
-          (process.env.REACT_APP_DEVICE != "portrait" && showMenuBar)) && (
-          <MenuBar
-            referencesOpen={referencesOpen}
-            setReferencesOpen={setReferencesOpen}
-            resetProgress={resetProgress}
-            isReferencesContentEmpty={isReferencesContentEmpty}
-            referencesButtonText={buttonText}
-            setShowRestartModal={setShowRestartModal}
-            isSidebarOpen={referencesOpen || showAnswerExplanation}
-          />
-        )}
 
         {isTimeoutIdle && (
           <Timeout name={name} reset={resetIdleTimer} setAnswers={setAnswers} />
