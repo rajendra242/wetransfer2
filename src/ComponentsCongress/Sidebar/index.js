@@ -64,6 +64,14 @@ const Wrapper = styled.div`
     height: 100%;
   }
 
+  @media only screen and (max-width: 512px) { 
+    position: fixed;
+    height: 100%;
+    flex: unset !important;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+  }
+
   h2 {
     color: ${({ background }) =>
       background == "alternate" ? "white" : "#c8a85d;"};

@@ -48,10 +48,10 @@ export const Wrapper = styled.div`
     left: 50px;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+  @media only screen and (max-width: 480px) { 
+    bottom: 20px;
     width: 90%;
     left: 10px;
-    bottom: 0px;
   }
 
   @media ${devices.PORTRAIT} {

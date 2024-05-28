@@ -42,6 +42,10 @@ export const InnerWrapper = styled.div`
     width: 100%;
   }
   padding-top: 224px;
+
+  @media only screen and (max-width: 480px) { 
+    padding-top: 100px;
+  }
 `;
 
 export const QuestionPagination = styled.div`
@@ -59,7 +63,7 @@ export const QuestionTitle = styled.h1`
   font-weight: 700;
   color: #c8a85d;
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+  @media only screen and (max-width: 480px) { 
     font-size: 25px;
   }
 `;
@@ -156,7 +160,7 @@ export const FormOptions = styled.div`
   flex-direction: row;
   gap: 8px;
 
-  @media only screen and (min-device-width: 400px) and (max-device-width: 930px) {
+  @media only screen and (max-width: 480px) { 
     display: block !important;
   }
 

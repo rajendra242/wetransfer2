@@ -80,6 +80,16 @@ export const IntroWrapper = styled(ContentWrapper)`
     }
   }
 
+  @media only screen and (max-width: 480px) { 
+    h1 {
+      font-size: 30px !important;
+    }
+
+    h2{
+      font-size: 25px !important;
+    }
+  }
+
   @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
     h1 {
       font-size: 50px !important;
@@ -108,4 +118,20 @@ export const JobCode = styled.div`
   display: flex;
   gap: 32px;
   margin-top: 100px;
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+   margin-top: 400px
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+   margin-top: 400px
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+   margin-top: 200px
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+   margin-top: 400px
+  }
 `;

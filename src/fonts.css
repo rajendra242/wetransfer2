@@ -105,3 +105,13 @@
 	margin-bottom: 16px;
 }
 
+@media only screen and (max-width: 480px) { 
+    .answer-explanation img{
+		width: 100%;
+		height: 100px;
+	}
+
+	.answer-explanation p {
+		font-size: 14px !important;
+	}
+}

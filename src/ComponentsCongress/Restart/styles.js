@@ -24,6 +24,7 @@ export const MainWrapper = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 `;
 
 export const RestartWrapper = styled(ContentWrapper)`
@@ -35,12 +36,25 @@ export const RestartWrapper = styled(ContentWrapper)`
   background: none;
   margin: 0px auto;
 
-  @media (max-width: 1366px) {
-    margin-left: 150px;
-  }
+  // @media (max-width: 1366px) {
+  //   margin-left: 150px;
+  // }
+
   @media ${devices.PORTRAIT} {
     margin-inline: 70px;
     margin-top: 767px;
+  }
+
+  @media only screen and (max-width: 480px) { 
+    margin: unset;
+
+    h1 {
+      font-size: 40px !important;
+    }
+
+    p {
+      font-size: 20px !important;
+    }
   }
 
   &::before {
@@ -96,6 +110,14 @@ export const ButtonsContainer = styled.div`
     }
     &:last-of-type {
       color: #c04c1c;
+    }
+  }
+
+  @media only screen and (max-width: 480px) { 
+    display: block;
+    
+    button {
+      margin-bottom: 15px;
     }
   }
 `;

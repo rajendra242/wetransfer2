@@ -30,7 +30,7 @@ export const AppWrapper = styled.main`
   font-family: ${({ theme }) => theme.bodyFont};
   color: #03212c;
   line-height: 1.3;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 0px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,6 +50,11 @@ export const AppWrapper = styled.main`
   //   -moz-transform: scale(0.8); /* old firefox */
   //   -o-transform: scale(0.8); /* old opera */
   //   -ms-transform: scale(0.8); /* old IE */
+  // }
+  
+  // @media only screen and (max-width: 480px) { 
+  //   min-height: 100vh;
+  //   height: 100vh;
   // }
 
   @media ${devices.M} {
@@ -210,6 +215,7 @@ export const Container = styled.div`
   and (max-device-width : 480px)
   { 
     padding-inline: 0px 0px !important;
+    height: auto;
   }
 `;
 
@@ -240,7 +246,7 @@ export const BackgroundWrapper = styled.div`
 export const ContentContainer = styled.div`
   position: relative;
   z-index: 0;
-  height: 100%;
+  // height: 100%;
   width: ${(props) => (props.isSidebarOpen ? "1219px" : "100%")};
   pointer-events: ${(props) => (props.isSidebarOpen ? "none" : "all")};
 

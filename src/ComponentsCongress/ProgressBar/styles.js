@@ -65,6 +65,18 @@ export const Indicator = styled.div`
     margin-right: ${(props) => (props.status === "none" ? "139px" : "114px")};
   }
 
+  @media only screen and (max-width: 480px) {
+    margin-right: ${(props) => (props.status === "none" ? `76px` : `60px`)};
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:not(:first-child) {
+      left: 60px
+    }
+  }
+
   &:not(:first-child) {
     &:before {
       content: "";

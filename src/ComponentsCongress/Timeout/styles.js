@@ -11,9 +11,9 @@ export const Wrapper = styled.div`
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(24px);
 
-  @media (max-width: 1366px) {
-    inset: -350px;
-  }
+  // @media (max-width: 1366px) {
+  //   inset: -350px;
+  // }
 
   * {
     -khtml-user-select: none;
@@ -33,9 +33,22 @@ export const Content = styled.div`
   /* padding-block: 40px; */
   text-align: center;
 
-  @media (max-width: 1366px) {
-    left: 235px;
-    top: calc(50% - 800px);
+  // @media (max-width: 1366px) {
+  //   left: 235px;
+  //   top: calc(50% - 800px);
+  // }
+
+  @media only screen and (max-width: 480px) { 
+    left: 0;
+    top: 0;
+
+    h1 {
+      font-size: 35px !important;
+    }
+
+    p {
+      font-size: 20px !important;
+    }
   }
 
   @media ${devices.PORTRAIT} {
@@ -85,6 +98,12 @@ export const CountdownWrapper = styled.div`
   svg {
     left: 0px;
   }
+
+  @media only screen and (max-width: 480px) { 
+    svg {
+      left: 62px;
+    }
+  }
 `;
 
 export const TimeDisplay = styled.div`
@@ -107,7 +126,41 @@ export const TimeDisplay = styled.div`
     font-weight: 300;
     line-height: 150px;
     margin: 0px;
+
   }
+
+  @media only screen and (max-width: 480px) { 
+    left: -8px;
+
+    h2 {
+      line-height: 25px;
+      font-size: 80px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    h2 {
+      font-size: 100px;
+    }
+  }
+
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    h2 {
+      font-size: 100px;
+    }
+  }
+  
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    left: -75px;
+
+    h2 {
+      line-height: 25px;
+      font-size: 80px;
+    }
+  }
+
   p {
     font-size: 24px;
     margin: 0px;
@@ -188,4 +241,12 @@ export const ButtonContainer = styled.div`
   gap: 32px;
   margin-top: 52px;
   z-index: 2;
+
+  @media only screen and (max-width: 480px) { 
+    display: block;
+    margin-top: 0px !important;
+    button {
+      margin-bottom: 15px;
+    }
+  }
 `;
