@@ -114,7 +114,7 @@ function App() {
               background:
                 "linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(31, 31, 30, 0.00) 100%)",
               backdropFilter: "blur(15px)",
-              width: "1219px",
+              width: "100%",
               height: "100%",
               position: "absolute",
               zIndex: 1,

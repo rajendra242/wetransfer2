@@ -2,7 +2,23 @@ import styled from "styled-components";
 import { Container, ContentWrapper, devices } from "../../stylesCongress";
 
 export const ResultsContainer = styled(Container)`
-  padding-top: 279px;
+  padding-top: 200px;
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    padding-top: 200px;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    bottom: 200px !important;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    padding-top: 200px;
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    padding-top: 200px;
+  }
 `;
 
 export const ResultsWrapper = styled(ContentWrapper)`
@@ -11,7 +27,7 @@ export const ResultsWrapper = styled(ContentWrapper)`
   background: transparent;
 
   @media (max-width: 1366px) {
-    margin-left: 150px;
+    // margin-left: 150px;
   }
 
   @media ${devices.PORTRAIT} {

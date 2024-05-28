@@ -80,10 +80,13 @@ export const IntroWrapper = styled(ContentWrapper)`
     }
   }
 
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px)
-  { 
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    h1 {
+      font-size: 50px !important;
+    }
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
     padding-top: 170px;
 
     h1 {

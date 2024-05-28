@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   z-index: 2;
   height: 48px;
   left: 200px;
-  bottom: 0px;
+  bottom: 200px;
   width: 45%;
 
   @media (max-width: 1366px) {
@@ -23,6 +23,35 @@ export const Wrapper = styled.div`
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
     width: 90%;
     left: 50px;
+    bottom: 0px;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    bottom: 200px !important;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    bottom: 350px;
+    width: 90%;
+    left: 50px;
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    bottom: 500px;
+    width: 90%;
+    left: 50px;
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+    bottom: 500px;
+    width: 90%;
+    left: 50px;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+    width: 90%;
+    left: 10px;
+    bottom: 0px;
   }
 
   @media ${devices.PORTRAIT} {

@@ -191,9 +191,19 @@ export const Container = styled.div`
     padding-inline: 20px 20px;
   }
   
-  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     padding-inline: 50px 50px;
     height: 1480px;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    height: 1480px;
+    padding-inline: 50px 50px;
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    height: 1480px;
+    padding-inline: 50px 50px;
   }
 
   and (min-device-width : 320px)
@@ -231,7 +241,7 @@ export const ContentContainer = styled.div`
   position: relative;
   z-index: 0;
   height: 100%;
-  width: 1219px;
+  width: ${(props) => (props.isSidebarOpen ? "1219px" : "100%")};
   pointer-events: ${(props) => (props.isSidebarOpen ? "none" : "all")};
 
   @media ${devices.S} {

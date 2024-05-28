@@ -167,7 +167,7 @@ const q3 = {
     { label: "Perilesional FAF patterns", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at diagnosis baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and nonsubfoveal location are all considered prognostic for a higher progression rate of GA.<sup>1</sup></p><img alt="" src=${Explanation_Q5} width="642" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein et al. 2018.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at diagnosis baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and nonsubfoveal location are all considered prognostic for a higher progression rate of GA.<sup>1</sup></p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein et al. 2018.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:
@@ -188,7 +188,7 @@ const q4 = {
     { label: "22 letters", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p><p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="642" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad et al. 2009.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p><p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="500" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad et al. 2009.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:

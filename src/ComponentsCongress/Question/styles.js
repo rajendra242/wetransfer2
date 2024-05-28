@@ -58,6 +58,10 @@ export const QuestionTitle = styled.h1`
   line-height: 120%;
   font-weight: 700;
   color: #c8a85d;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+    font-size: 25px;
+  }
 `;
 
 export const QuestionSubtitle = styled.p`
@@ -152,6 +156,10 @@ export const FormOptions = styled.div`
   flex-direction: row;
   gap: 8px;
 
+  @media only screen and (min-device-width: 400px) and (max-device-width: 930px) {
+    display: block !important;
+  }
+
   @media ${devices.large} {
     gap: 16px;
   }
@@ -178,6 +186,7 @@ export const AnswerLabel = styled.label`
     border: 1px solid #c04c1c;
     transition: all 0.3s linear;
   }
+  margin-bottom: 15px;
 
   input:focus + & {
     outline: 2px solid transparent;
