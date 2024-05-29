@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   background: ${({ background }) => `${SIDEBAR_BACKGROUNDS[background]}`};
   backdrop-filter: blur(24px);
   color: #ffffff;
-  padding: 120px 80px 60px;
+  padding: 60px 60px 10px 60px;
   animation: ${slideIn} 0.2s linear;
   transform: translateX(0%);
   flex-grow: 1;
@@ -86,6 +86,7 @@ const Wrapper = styled.div`
   > button {
     align-self: center;
     width: 312px;
+    margin-top: 20px;
 
     span {
       flex-grow: 1;

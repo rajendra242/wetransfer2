@@ -19,6 +19,10 @@ export const ResultsContainer = styled(Container)`
   @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
     padding-top: 200px;
   }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    padding-top: 100px;
+  }
 `;
 
 export const ResultsWrapper = styled(ContentWrapper)`

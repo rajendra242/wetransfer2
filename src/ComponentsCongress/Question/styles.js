@@ -46,6 +46,10 @@ export const InnerWrapper = styled.div`
   @media only screen and (max-width: 480px) { 
     padding-top: 100px;
   }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    padding-top: 150px;
+  }
 `;
 
 export const QuestionPagination = styled.div`

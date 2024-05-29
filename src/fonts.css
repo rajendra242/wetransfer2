@@ -115,3 +115,10 @@
 		font-size: 14px !important;
 	}
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+	.answer-explanation img{
+		width: 400px;
+		height: 300px;
+	}
+}

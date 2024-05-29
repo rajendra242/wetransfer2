@@ -10,9 +10,9 @@ export const Wrapper = styled.div`
     isResults ? "flex-end" : "space-between"};
   position: absolute;
   z-index: 2;
-  height: 48px;
+  // height: 48px;
   left: 200px;
-  bottom: 200px;
+  bottom: 0px;
   width: 45%;
 
   @media (max-width: 1366px) {

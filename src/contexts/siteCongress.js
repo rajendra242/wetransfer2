@@ -12,8 +12,8 @@ const dictionaryEN = {
     subheading: "How much do you know?",
     cta: `Start the quiz`,
     copyright: "&copy; Apellis International GmbH. All rights reserved.",
-    jobCode: "EU-GA-2300030",
-    dop: "September 2023",
+    jobCode: "EU-GA-2400029",
+    dop: "May 2024",
   },
   questions: {
     treat: `Continue`,
@@ -26,7 +26,7 @@ const dictionaryEN = {
     youScored: `Your score is`,
     outOf: "/",
     qrCodeLabelOne:
-      "<strong>Sign up:</strong> Be the first to receive the latest GA news",
+      "Scan the QR code or click here to join us on our journey in geographic atrophy (GA)",
     negative: "Would you like to try again?",
     positive: "Well done!",
     tryAgain: "Take the quiz again",

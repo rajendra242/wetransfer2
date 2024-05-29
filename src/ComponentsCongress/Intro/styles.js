@@ -107,6 +107,10 @@ export const IntroWrapper = styled(ContentWrapper)`
       font-size: 20px;
     }
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    padding-top: 150px;
+  }
 `;
 
 export const JobCode = styled.div`

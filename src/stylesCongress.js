@@ -62,7 +62,7 @@ export const AppWrapper = styled.main`
   }
 
   @media ${devices.large} {
-    height: 1080px;
+    // height: 1080px;
   }
 
   @media ${devices.PORTRAIT} {
@@ -203,6 +203,11 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
     height: 1480px;
+    padding-inline: 50px 50px;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    // height: 1480px;
     padding-inline: 50px 50px;
   }
 
