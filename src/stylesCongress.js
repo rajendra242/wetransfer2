@@ -226,6 +226,7 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     width: 80%;
+    padding-inline: 95px;
   }
 `;
 

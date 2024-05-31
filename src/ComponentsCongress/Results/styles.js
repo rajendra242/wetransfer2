@@ -51,6 +51,26 @@ export const ResultsWrapper = styled(ContentWrapper)`
     color: #c8a85d;
     margin-bottom: 24px;
   }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    h1 {
+      font-size: 50px !important;
+    }
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+
   h2 {
     font-weight: 700;
     font-size: 30px;
@@ -122,6 +142,7 @@ export const QRContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 28px;
+    align-items: center;
 
     img {
       width: 216px;
