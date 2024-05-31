@@ -298,13 +298,17 @@ export const ButtonIcon = styled.div`
 `;
 
 export const Submit = styled(ButtonPrimary)`
-  margin: 40px 0px;
+  margin: 40px 0px 60px 0px;
   width: 312px;
   padding-inline: 56px 16px;
   justify-content: flex-start;
 
   span {
     width: 180px;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    margin: 80px 0px;
   }
 `;
 

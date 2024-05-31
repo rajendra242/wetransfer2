@@ -50,14 +50,20 @@ export default function Results({
   return (
     <ResultsContainer className="fadeIn">
       <ResultsWrapper>
-        <h1 className="fadeIn">
-          {dictionary[language].resultsPage.youScored}{" "}
-          <span>
-            {score} {dictionary[language].resultsPage.outOf} {max}
-          </span>{" "}
-          {dictionary[language].resultsPage.points}
-        </h1>
-        <h2>{message}</h2>
+        <div>
+          <h1 className="fadeIn">
+            {dictionary[language].resultsPage.youScored}{" "}
+            <span>
+              {score} {dictionary[language].resultsPage.outOf} {max}
+            </span>{" "}
+            {dictionary[language].resultsPage.points}
+          </h1>
+          <h2>{message}</h2>
+          <ButtonPrimary onClick={resetProgress}>
+            <span>{dictionary[language].resultsPage.tryAgain}</span>
+            <img src={RestartIcon} />
+          </ButtonPrimary>
+        </div>
         <QRContent>
           <div>
             <img src={QRCode} alt="QR code" />
@@ -68,10 +74,6 @@ export default function Results({
             />
           </div>
         </QRContent>
-        <ButtonPrimary onClick={resetProgress}>
-          <span>{dictionary[language].resultsPage.tryAgain}</span>
-          <img src={RestartIcon} />
-        </ButtonPrimary>
       </ResultsWrapper>
     </ResultsContainer>
   );

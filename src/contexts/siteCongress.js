@@ -13,7 +13,7 @@ const dictionaryEN = {
     cta: `Start the quiz`,
     copyright: "&copy; Apellis International GmbH. All rights reserved.",
     jobCode: "EU-GA-2400029",
-    dop: "May 2024",
+    dop: "June 2024",
   },
   questions: {
     treat: `Continue`,

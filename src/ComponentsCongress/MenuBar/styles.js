@@ -68,14 +68,20 @@ export const MenuButton = styled.div`
   color: #ffffff;
   position: relative;
   min-width: 80px;
-  min-height: 80px;
+  // min-height: 80px;
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
+  margin-bottom: 15px;
+  margin-top: 15px;
 
   img:first-of-type {
     height: 32px;
     width: 32px;
+  }
+
+  @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+    min-height: 40px;
   }
 
   font-weight: 600;

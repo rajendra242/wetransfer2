@@ -172,7 +172,7 @@ export const Container = styled.div`
 
   opacity: 1;
   height: 100%;
-  padding-inline: 200px 299px;
+  padding-inline: 165px 165px;
   background: ${(props) =>
     props.hasGradient
       ? props.isHomepage
@@ -199,6 +199,7 @@ export const Container = styled.div`
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     padding-inline: 50px 50px;
     height: 1480px;
+    width: 80%;
   }
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
@@ -221,6 +222,10 @@ export const Container = styled.div`
   { 
     padding-inline: 0px 0px !important;
     height: auto;
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    width: 80%;
   }
 `;
 

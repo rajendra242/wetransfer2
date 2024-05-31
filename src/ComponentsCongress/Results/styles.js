@@ -21,7 +21,7 @@ export const ResultsContainer = styled(Container)`
   }
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 `;
 
@@ -29,6 +29,8 @@ export const ResultsWrapper = styled(ContentWrapper)`
   padding: 0px;
   margin: 0px;
   background: transparent;
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: 1366px) {
     // margin-left: 150px;
