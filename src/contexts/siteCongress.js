@@ -12,8 +12,9 @@ const dictionaryEN = {
     subheading: "How much do you know?",
     cta: `Start the quiz`,
     copyright: "&copy; Apellis International GmbH. All rights reserved.",
-    jobCode: "EU-GA-2400029",
+    jobCode: "EU-GA-2400037",
     dop: "June 2024",
+    area: "These resources are intended for an audience outside the United States."
   },
   questions: {
     treat: `Continue`,
