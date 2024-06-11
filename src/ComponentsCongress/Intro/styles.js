@@ -120,7 +120,7 @@ export const JobCode = styled.div`
   letter-spacing: 0.5px;
   line-height: 150%;
   display: flex;
-  gap: 11px;
+  gap: 32px;
   margin-top: 100px;
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {

@@ -94,13 +94,10 @@ export default function Intro({ setName, screensaverContent }) {
           }}
         ></span>
         <span>
-          {dictionary[language].intro.jobCode}&nbsp;&nbsp;
+          {dictionary[language].intro.jobCode}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {dictionary[language].intro.dop}
         </span>
       </JobCode>
-      <p style={{marginTop: '15px'}}>
-        {dictionary[language].intro.area}
-      </p>
     </IntroContainer>
   );
 }

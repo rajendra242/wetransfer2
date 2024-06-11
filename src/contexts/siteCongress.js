@@ -12,9 +12,8 @@ const dictionaryEN = {
     subheading: "How much do you know?",
     cta: `Start the quiz`,
     copyright: "&copy; Apellis International GmbH. All rights reserved.",
-    jobCode: "EU-GA-2400037",
+    jobCode: "EU-GA-2400029",
     dop: "June 2024",
-    area: "These resources are intended for an audience outside the United States."
   },
   questions: {
     treat: `Continue`,
@@ -164,11 +163,11 @@ const q3 = {
     {
       label: "Foveal involvement",
     },
-    { label: "Larger diagnosis baseline lesion size", isRight: true },
+    { label: "Larger diagnosis lesion size", isRight: true },
     { label: "Perilesional FAF patterns", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at diagnosis baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and nonsubfoveal location are all considered prognostic for a higher progression rate of GA.<sup>1</sup></p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein et al. 2018.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at diagnosis, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and nonsubfoveal location are all considered prognostic for a higher progression rate of GA.<sup>1</sup></p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein et al. 2018.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:
