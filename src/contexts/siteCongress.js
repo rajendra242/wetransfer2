@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 import { useLanguage } from "./LanguageContext";
 import Explanation_Q1_1 from "../assets/images/explanation/q1_1.png";
 import Explanation_Q1_2 from "../assets/images/explanation/q1_2.png";
-import Explanation_Q5 from "../assets/images/explanation/q5.png";
+import Explanation_Q5 from "../assets/images/explanation/d5.png";
 import Explanation_Q6 from "../assets/images/explanation/q6.png";
 
 const dictionaryEN = {
