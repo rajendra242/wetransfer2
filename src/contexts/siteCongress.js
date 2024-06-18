@@ -26,7 +26,7 @@ const dictionaryEN = {
     youScored: `Your score is`,
     outOf: "/",
     qrCodeLabelOne:
-      "Scan the QR code or click here to join us on our journey in geographic atrophy (GA)",
+      "Scan the QR code to join us on our journey in geographic atrophy (GA)",
     negative: "Would you like to try again?",
     positive: "Well done!",
     tryAgain: "Take the quiz again",
@@ -121,7 +121,7 @@ const q1 = {
   },
   questionAbbreviations: "",
   questionReferences:
-    "<ol><li>Lindblad AS, <em>et al. Arch Ophthalmol.</em> 2009;127(9):1168–1174.</li><li>Royal College of Ophthalmologists. Age related macular degeneration services: executive summary. 2021. Available at: https://www.rcophth.ac.uk/wp-content/uploads/2021/08/AMD-Commissioning-Guidance-Executive-Summary-June-2021.pdf (accessed August 2023).</li></ol>",
+    "<ol><li>Lindblad AS, <em>et al. Arch Ophthalmol.</em> 2009;127(9):1168–1174.</li><li>Royal College of Ophthalmologists. Age-related macular degeneration services: executive summary. 2021. Available at: https://www.rcophth.ac.uk/wp-content/uploads/2021/08/AMD-Commissioning-Guidance-Executive-Summary-June-2021.pdf (accessed August 2023).</li></ol>",
   explanationAbbreviations: "",
   explanationReferences:
     "<ol><li>Fleckenstein M, et al. Ophthalmology. 2018;125(3):369&ndash;390.</li></ol>",
@@ -146,7 +146,7 @@ const q2 = {
   },
   questionAbbreviations: "",
   questionReferences:
-    "<ol><li>Fleckenstein M, <em>et al. Ophthalmology.</em> 2018;125(3):369–390.</li><li>Royal College of Ophthalmologists. Age related macular degeneration services: executive summary. 2021. Available at: https://www.rcophth.ac.uk/wp-content/uploads/2021/08/AMD-Commissioning-Guidance-Executive-Summary-June-2021.pdf (accessed August 2023).</li></ol>",
+    "<ol><li>Fleckenstein M, <em>et al. Ophthalmology.</em> 2018;125(3):369–390.</li><li>Royal College of Ophthalmologists. Age-related macular degeneration services: executive summary. 2021. Available at: https://www.rcophth.ac.uk/wp-content/uploads/2021/08/AMD-Commissioning-Guidance-Executive-Summary-June-2021.pdf (accessed August 2023).</li></ol>",
   explanationAbbreviations: "",
   explanationReferences:
     "<ol><li>Archivdaten. Global Harris Poll Patientenumfrage 2022.</li></ol>",
@@ -167,7 +167,7 @@ const q3 = {
     { label: "Perilesional FAF patterns", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at diagnosis, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and nonsubfoveal location are all considered prognostic for a higher progression rate of GA.<sup>1</sup></p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein et al. 2018.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and non-subfoveal location are all considered prognostic for a higher progression rate of GA</p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein <em> et al.</em> 2018.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:
@@ -188,7 +188,7 @@ const q4 = {
     { label: "22 letters", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p><p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="500" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad et al. 2009.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p><p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="500" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad <em>et al</em>. 2009.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:

@@ -50,13 +50,16 @@ export const ResultsWrapper = styled(ContentWrapper)`
     text-align: left;
     color: #c8a85d;
     margin-bottom: 24px;
-  }
 
-  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-    h1 {
+    @media only screen and (min-width: 1130px) and (max-width: 1366px){
       font-size: 50px !important;
     }
+
+    @media only screen and (min-width: 1100px) and (max-width: 1130px){
+      font-size: 45px !important;
+    }
   }
+
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
     h1 {

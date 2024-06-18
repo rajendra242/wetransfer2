@@ -45,7 +45,7 @@ export default function Background() {
               zIndex: -2,
             }}
             src={BackgroundHome}
-            id="bg-img-0"
+            id="bg-img-11"
           />
           <BgImage
             style={{
