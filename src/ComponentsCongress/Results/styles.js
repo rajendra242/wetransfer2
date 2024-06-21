@@ -2,22 +2,22 @@ import styled from "styled-components";
 import { Container, ContentWrapper, devices } from "../../stylesCongress";
 
 export const ResultsContainer = styled(Container)`
-  padding-top: 200px;
+  padding-top: 225px;
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    padding-top: 200px;
+    padding-top: 225px;
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
-    bottom: 200px !important;
+    bottom: 225px !important;
   }
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
-    padding-top: 200px;
+    padding-top: 225px;
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1133px) and (orientation: portrait) {
-    padding-top: 200px;
+    padding-top: 225px;
   }
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
@@ -48,7 +48,7 @@ export const ResultsWrapper = styled(ContentWrapper)`
     font-size: 70px;
     line-height: 130%;
     text-align: left;
-    color: #c8a85d;
+    color: white;
     margin-bottom: 24px;
 
     @media only screen and (min-width: 1130px) and (max-width: 1366px){

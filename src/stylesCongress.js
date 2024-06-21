@@ -51,11 +51,22 @@ export const AppWrapper = styled.main`
   //   -o-transform: scale(0.8); /* old opera */
   //   -ms-transform: scale(0.8); /* old IE */
   // }
-  
-  // @media only screen and (max-width: 480px) { 
+
+  // @media only screen and (max-width: 480px) {
   //   min-height: 100vh;
   //   height: 100vh;
   // }
+
+  @media screen and (min-width: 1978px) and (max-height: 2048px) and (orientation: landscape) {
+    margin: unset !important;
+    max-width: 100%;
+  }
+
+  /* Portrait Orientation */
+  @media screen and (min-width: 2048px) and (max-height: 1978px) and (orientation: portrait) {
+    margin: unset !important;
+    max-width: 100%;
+  }
 
   @media ${devices.M} {
     padding-bottom: 0px;
@@ -195,7 +206,7 @@ export const Container = styled.div`
   @media (max-width: 1020px) {
     padding-inline: 20px 20px;
   }
-  
+
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     padding-inline: 50px 50px;
     height: 1480px;
@@ -217,9 +228,7 @@ export const Container = styled.div`
     padding-inline: 50px 50px;
   }
 
-  and (min-device-width : 320px)
-  and (max-device-width : 480px)
-  { 
+  and (min-device-width : 320px) and (max-device-width : 480px) {
     padding-inline: 0px 0px !important;
     height: auto;
   }

@@ -6,7 +6,7 @@ import useProgress from "../../hooks/useProgress";
 import { ButtonPrimary } from "../Button";
 import RestartIcon from "../../assets/images/restart-icon.png";
 import { QRContent, ResultsContainer, ResultsWrapper } from "./styles";
-import QRCode from "../../assets/images/qr-code.png";
+import QRCode from "../../assets/images/qr-code-3.png";
 import { useAnalytics } from "../../hooks/useAnalytics";
 
 export default function Results({

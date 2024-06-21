@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 import { useLanguage } from "./LanguageContext";
 import Explanation_Q1_1 from "../assets/images/explanation/q1_1.png";
 import Explanation_Q1_2 from "../assets/images/explanation/q1_2.png";
-import Explanation_Q5 from "../assets/images/explanation/d5.png";
+import Explanation_Q5 from "../assets/images/explanation/q3.png";
 import Explanation_Q6 from "../assets/images/explanation/q6.png";
 
 const dictionaryEN = {
@@ -167,7 +167,16 @@ const q3 = {
     { label: "Perilesional FAF patterns", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and non-subfoveal location are all considered prognostic for a higher progression rate of GA</p><img alt="" src=${Explanation_Q5} width="500" height="358" /><small><span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein <em> et al.</em> 2018.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answers:</strong> 3 and 4</p><p>Lesion characteristics such as larger lesion size at baseline, multifocal lesions, perilesional FAF patterns (indicating excessive lipofuscin accumulation), and non-subfoveal location are all considered prognostic for a higher progression rate of GA</p><img alt="" src=${Explanation_Q5} width="500" height="300" />
+    <small>
+      <span>Lesion features associated with progression of GA on fundus autofluorescence (FAF).</span><span>Images from Fleckenstein <em> et al.</em> 2018.<sup>1</sup></span>
+    </small>
+    <small>
+      <span>
+        <strong>Watch icon denotes a morphology related to faster progression</strong><br>
+      Images courtesy of Netan Choudhry, MD, FRCS(C), DABO, Vitreous Retina Macula Specialists of Toronto (Lesion location).Images reprinted from Fleckenstein M, et al. Ophthalmology. 2018;125(3):369-390. ©️ 2018, with permission from the American Academy of Ophthalmology (FAF pattern).</span>
+    </small>
+    </div>`,
   },
   questionAbbreviations: "",
   questionReferences:

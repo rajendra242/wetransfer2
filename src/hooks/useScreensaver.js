@@ -71,23 +71,25 @@ export function useScreensaver() {
 
         if (screensaverIndex == SCREENSAVER_LIST.length - 1) {
           const el = document.getElementById(`bg-img-0`);
-          gsap.to(el, {
-            opacity: 1,
-            onComplete: () => {
-              setScreensaverIndex(
-                (index) => (index + 1) % SCREENSAVER_LIST.length
-              );
-
-              for (let i = 0; i < SCREENSAVER_LIST.length; i++) {
-                if (i !== screensaverIndex) {
-                  console.log(i);
-                  const el = document.getElementById(`bg-img-${i}`);
-
-                  el.style.opacity = 1;
+          if(el){
+            gsap.to(el, {
+              opacity: 1,
+              onComplete: () => {
+                setScreensaverIndex(
+                  (index) => (index + 1) % SCREENSAVER_LIST.length
+                );
+  
+                for (let i = 0; i < SCREENSAVER_LIST.length; i++) {
+                  if (i !== screensaverIndex) {
+                    console.log(i);
+                    const el = document.getElementById(`bg-img-${i}`);
+  
+                    el.style.opacity = 1;
+                  }
                 }
-              }
-            },
-          });
+              },
+            });
+          }
         } else {
           gsap.to(IMAGE_TO_FADE_OUT, {
             opacity: 0,
