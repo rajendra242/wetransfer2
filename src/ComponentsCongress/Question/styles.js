@@ -176,9 +176,9 @@ export const FormOptions = styled.div`
 export const AnswerLabel = styled.label`
   border-radius: 4px;
   color: #ffffff;
-  padding: 16px 24px;
+  padding: 15px 15px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   flex-grow: 1;
   border: 1px solid #ffffff;

@@ -95,7 +95,7 @@ function App() {
     !isImagePopupOpen;
 
   function goToNextQuestion() {
-    const QUESTION_COUNT = 4;
+    const QUESTION_COUNT = 5;
     setShowAnswerExplanation(false);
 
     if (active < QUESTION_COUNT - 1) {

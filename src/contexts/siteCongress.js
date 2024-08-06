@@ -12,8 +12,8 @@ const dictionaryEN = {
     subheading: "How much do you know?",
     cta: `Start the quiz`,
     copyright: "&copy; Apellis International GmbH. All rights reserved.",
-    jobCode: "EU-GA-2400029",
-    dop: "June 2024",
+    jobCode: "EU-GA-2400055",
+    dop: "July 2024",
   },
   questions: {
     treat: `Continue`,
@@ -69,7 +69,7 @@ const dictionaryEN = {
   },
   pagination: {
     question: "Question",
-    of: "of 4",
+    of: "of 5",
   },
   timeout: {
     heading: "You haven't finished",
@@ -197,7 +197,8 @@ const q4 = {
     { label: "22 letters", isRight: true },
   ],
   explanation: {
-    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p><p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="500" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad <em>et al</em>. 2009.<sup>1</sup></span></small></div>`,
+    body: `<div><p><strong>Answer:</strong> 22 letters</p><p>Data from the AREDS study (N=3640) show that visual acuity progressively declined following foveal involvement of GA lesions. Five years after diagnosis of foveal GA, participants' visual acuity had decreased by an average of 22 letters to 41.9 letters (~6/48).<sup>1</sup></p>
+    <p>Disease progression in GA is constant.<sup>1–4</sup> It is critical to recognise GA as early as possible as it can have a significant impact on patients' vision and subsequent quality of life.<sup>5–7</sup></p><img alt="" src=${Explanation_Q6} width="500" height="304" /><small><span>Mean visual acuity one year before diagnosis of foveal GA to five years after diagnosis (with 95% confidence intervals).<br />Adapted from Lindblad <em>et al</em>. 2009.<sup>1</sup></span></small></div>`,
   },
   questionAbbreviations: "",
   questionReferences:
@@ -207,9 +208,36 @@ const q4 = {
     "<ol><li>Fleckenstein, M. et al. Ophthalmology. 2018;125(3):369&ndash;390.</li><li>Sunness JS, et al. Ophthalmology. 2007;114(2):271&ndash;277.</li><li>Boyer DS, et al. Retina. 2017;37(5):819&ndash;835.</li></ol>",
 };
 
+const q5 = {
+  title: "What is the role of microperimetry in GA?",
+  subheading: "Select an answer",
+  answers: [
+    {
+      label: "Microperimetry bridges retinal structure (measured by OCT/FAF) to visual function",
+    },
+    {
+      label: "Microperimetry measures patient reported perception of light stimuli",
+    },
+    { label: "Microperimetry specifically assesses macular sensitivity" },
+    { label: "Microperimetry showed highest correlation with GA area (vs BCVA, LLVA, reading speed and more)" },
+    { label: "All of the above", isRight: true,},
+  ],
+  explanation: {
+    body: `<div><p><strong>Answer:</strong> All of the above</p><p>
+      Microperimetry is an important tool in GA. It bridges retinal structure (measured by OCT/FAF) to visual function, measures patient reported perception of light stimuli and assesses macular sensitivity. In the CHROMA and SPECTRI studies microperimetry showed highest correlation with GA area vs. BCVA, LLVA, NEI VFQ-25, FRI Index, reading speed.
+    </p></div>`,
+  },
+  questionAbbreviations: "",
+  questionReferences:
+  "<ol> <li>Rachitskaya AV, et al. oral presentation at the Macula Society Annual Meeting. Palm Springs, CA, USA. 7–10 February 2024;</li> <li>Heier JS, et al. Ophthalmol Retina 2020;4:673–688. </li><li>Chang DS <em>et al. Ophthalmology</em> Sci 2023;4(1):100351.<br>BCVA=Best-corrected Visual Acuity; GA=geographic atrophy; LLVA=low luminance visual acuity.</li></ol>",
+  explanationAbbreviations: "",
+  explanationReferences:
+    "<ol><li>Archivdaten. Global Harris Poll Patientenumfrage 2022.</li></ol>",
+};
+
 export const patient1 = {
   name: "quiz",
-  questions: [q1, q2, q3, q4],
+  questions: [q1, q2, q3, q4, q5],
 };
 
 // list of the available 'patients' for each language version

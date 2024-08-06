@@ -41,6 +41,10 @@ const Wrapper = styled.div`
   //   flex: unset !important;
   // }
 
+  @media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
+    padding: 18px 60px 10px 60px;
+  }
+
   @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     flex: unset !important;
     padding: 120px 45px 160px;
@@ -81,6 +85,10 @@ const Wrapper = styled.div`
 
   > div {
     flex-grow: 1;
+
+    @media only screen and (min-width: 900px) and (max-width: 1366px) and (orientation: landscape) {
+     flex-grow: unset
+    }
   }
 
   > button {

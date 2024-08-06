@@ -63,6 +63,10 @@ const HeadingWrapper = styled.h2`
   gap: 28px;
   font-size: 30px !important;
 
+  @media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
+    margin-bottom: 10px !important;
+  }
+
   span {
     font-weight: 400;
 
@@ -76,7 +80,7 @@ const Content = styled.div`
   font-size: 20px;
 
   p {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 29px;
   }
 
@@ -93,6 +97,35 @@ const Content = styled.div`
     span {
       display: block;
       margin: 0px;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    small {
+      margin-top: 18px;
+    }
+
+    .answer-explanation {
+      flex-grow: unset;
+    }
+  }
+
+  @media only screen and (min-width: 810px) and (max-width: 1080px) and (orientation: landscape) {
+    p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    small {
+      margin-top: 12px;
+    }
+
+    .answer-explanation {
+      flex-grow: unset;
     }
   }
 `;

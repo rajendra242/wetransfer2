@@ -57,6 +57,11 @@ export const AppWrapper = styled.main`
   //   height: 100vh;
   // }
 
+  @media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 2160px) and (max-height: 2160px) {
+     margin: unset !important;
+    max-width: 100%;
+  }
+
   @media screen and (min-width: 1978px) and (max-height: 2048px) and (orientation: landscape) {
     margin: unset !important;
     max-width: 100%;
@@ -211,6 +216,15 @@ export const Container = styled.div`
     padding-inline: 50px 50px;
     height: 1480px;
     width: 80%;
+  }
+
+  @media only screen 
+  and (min-width: 1000px) 
+  and (max-width: 1200px) 
+  and (min-height: 1800px) 
+  and (max-height: 2100px) 
+  and (orientation: portrait) {
+    height: 100% !important;
   }
 
   @media only screen and (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
